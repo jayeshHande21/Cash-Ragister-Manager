@@ -9,37 +9,32 @@ const message = document.querySelector("#error");
 
 function validateAmount() {
     message.style.display = "none";
-    
-    if (billAmount.value > 0)
-    
-    {
-        if (cashGiven.value >= billAmount.value)
-         {
 
-            const AmountToBeReturn =cashGiven.value - billAmount.value;
+    if (billAmount.value > 0)
+
+    {
+        if (cashGiven.value >= billAmount.value) {
+
+            const AmountToBeReturn = cashGiven.value - billAmount.value;
             calculateChange(AmountToBeReturn);
 
-        } 
-        else
-        {
+        } else {
             showError("Given Amount is Not Sufficient");
 
         }
+    } else {
+       showError("Plese anter a valid amount")
+
     }
-    else
-    {
-        
-        
-    }
-    
-const billi=billAmount.value;
-console.log(billi);
-   
+
+}
+
+function calculateChange(amount) {
 
 }
 
 function showError(msg) {
- 
+
     message.style.display = "Block";
     message.innerHTML = msg;
 }

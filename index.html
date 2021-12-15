@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,47 +8,51 @@
     <title>Cash Ragister</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-    <h1>Cash Ragister Manager</h1>
-    <p> Enter a bill amount and the cash given by the customer and find the minimum number of notes to be given to the customer</p>
-   
-     <label for="bill-amount">Bill Amount</label>
-     <input type="text" id="bill-amount"/>
+        <h1>Cash Ragister Manager</h1>
+        <p> Enter a bill amount and the cash given by the customer and find the minimum number of notes to be given to
+            the customer</p>
 
-     <label for="cash-given">Cash Given</label>
-     <input  type="text" id="cash-given" />
-     <button id="button">Check</button>
-     <p id="error"> </p>
+        <label for="bill-amount">Bill Amount</label>
+        <input type="text" id="bill-amount" />
+
+        <label for="cash-given">Cash Given</label>
+        <input type="text" id="cash-given" />
+        <button id="button">Check</button>
+        <p id="error"> </p>
+
+
+
+        <table class="change-table">
+            <caption>Return Change</caption>
+            <tr>
+                <th>No.of Notes</th>
+                <td></td>
+
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr><br>
+            <tr><br>
+                <th>Notes</th>
+                <td>2000</td>
+                <td>500</td>
+                <td>100</td>
+                <td>50</td>
+                <td>20</td>
+                <td>20</td>
+                <td>5</td>
+                <td>1</td>
+            </tr>
+        </table>
     </div>
-    
-  
-  <table class="change-table">
-      <caption>Return Change</caption>
-      <tr>
-         <th>No.of Notes</th>
-         <td></td>
-         
-         <td></td>
-         <td></td>
-         <td></td>
-         <td></td>
-         <td></td>
-         <td></td>
-         <td></td>
-      </tr><br>
-      <tr><br>
-         <th>Notes</th>
-         <td>2000</td>
-         <td>500</td>
-         <td>100</td>
-         <td>50</td>
-         <td>20</td>
-         <td>20</td>
-         <td>5</td>
-         <td>1</td>
-      </tr>
-  </table>
 </body>
 <script src="script.js"></script>
+
 </html>
