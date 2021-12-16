@@ -6,7 +6,7 @@ const button = document.querySelector("#button");
 
 const message = document.querySelector("#error");
 
-
+console.log(cashGiven.value)
 function validateAmount() {
     message.style.display = "none";
 
