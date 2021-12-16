@@ -23,7 +23,8 @@ function validateAmount() {
 
         }
     } else {
-       showError("Plese anter a valid amount")
+        message.style.display = "none";
+        showError("Plese anter a valid amount")
 
     }
 
